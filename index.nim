@@ -286,23 +286,18 @@ when isMainModule:
  
   nbInit(theme = revealTheme)
   setSlidesTheme(Serif)
+  slideTitle
+  slideHeron
+  slideGolem
+  slideTurk
+  slideAda
   skip:
-    slideTitle
-    slideHeron
-    slideGolem
-    slideTurk
-  slideLeibniz
-  slideBoole
-  skip:
-    slideAda
     slideNeuron
-    slideVannevar
     slideTuring
     slideDartmouth
   slideMenace
   slideEliza
-  slidePerceptrons
+  # slidePerceptrons
   slideMoravec
-  slideMistral
-  #slideAlexNet
+  # slideMistral
   nbSave

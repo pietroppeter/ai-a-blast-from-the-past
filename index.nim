@@ -184,8 +184,8 @@ slide(
 In 1961 Donald Michie designed and built "Matchbox Educable Noughts and Crosses Engine"
 a mechanical computer made of 304 matchboxes that can learn how to play Tic-Tac-Toe.
 
-Roughly 40 years later I read about MENACE in a crossword weekly magazine
-and it is still the best imagine I have incomey mind of what
+Roughly 40 years later I read about MENACE in a Italian crossword weekly magazine
+and it is still the best imagine I have in my mind of what
 Reinforcement Learning is about.
 
 Look it up, it is worth it!
@@ -230,10 +230,22 @@ slide(
   whenn = "1979",
   who = "Hans Moravec",
   what = "Stanford Cart",
-  image = "https://placehold.co/600x400",
+  image = "https://web.stanford.edu/~learnest/sail/oldcart.fld/image006.png",
   notes = """
-todo
+In 1979 Hans Moravec during his PhD thesis was able to make the Stanford Cart move
+automously around obstacles in a controlled environment.
+The vehicle crossed a chair-filled room without human intervention in about five hours.
+
+Nowadays the so called Moravec Paradox is still used to explain why we do not
+yet have autonomous driving, despite all the promises that a prominent social media owner can make.
+
+In the words of Moravec the paradox lies in the fact that:
+"it is comparatively easy to make computers exhibit
+adult level performance on intelligence tests or playing checkers,
+and difficult or impossible to give them the skills of a one-year-old
+when it comes to perception and mobility"
 """,
+# https://web.stanford.edu/~learnest/sail/oldcart.html
   Moravec
 )
 

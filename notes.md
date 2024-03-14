@@ -10,13 +10,14 @@ todo content:
 - [ ] Boole
 - [ ] Ada
 - [ ] Neuron
+- [ ] add regex?
 - [ ] Vannevar
 - [ ] Turing
 - [ ] Dartmouth
 - [x] MENACE
 - [x] ELIZA
 - [ ] Perceptrons
-- [ ] Moravec
+- [x] Moravec
 - [ ] Mistral
 - [ ] AlexNet
 

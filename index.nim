@@ -7,7 +7,7 @@ template slide(ident: untyped, body: untyped) =
 
 slide(Title):
   nbText: "## AI: a blast from the past"
-  nbText: "#### An opinionated and condensed history"
+  nbText: "#### selected milestones from AI history"
   nbText: "[py4ai.com](py4ai.com)"
   speakerNote """
 This is a lightning talk for the conference Py4AI
@@ -102,7 +102,8 @@ slide(
   what = "Chain Rule", # todo
   image = "https://placehold.co/600x400",
   notes = """
-(and Alphabet of Human Thought)
+In 1676 Gottfried Wilhelm Leibniz published the chain rule of differential calculus,
+a critical ingredient in the training of modern neural network.
 """,
   Leibniz
 )
@@ -123,13 +124,21 @@ slide(
   whenn = "1843",
   who = "Ada Lovelace",
   what = "Notes on Analytical Engine",
-  image = "https://placehold.co/600x400",
+  image = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Ada_Lovelace_in_1852.jpg/440px-Ada_Lovelace_in_1852.jpg",
   notes = """
-todo
+In 1843 Ada Lovelace added an extensive set of notes to a translation of
+Luigi Menabrea's article on Babbage's newest proposed machine called Analytical Engine.
+
+Besides containing the first published program in history
+(for a machine that would never be built) it also contains the following remark,
+known as a 'dismissal'of AI:
+"The Analytical Engine has no pretensions whatever to originate anything.
+It can do whatever we know how to order it to perform.
+It can follow analysis; but it has no power of anticipating any analytical relations or truths"
 """,
+# https://en.wikipedia.org/wiki/Ada_Lovelace#Ada_Byron's_notes_on_the_analytical_engine
   Ada
 )
-
 slide(
   whenn = "1943",
   who = "McCulloch and Pitts",
@@ -282,8 +291,9 @@ when isMainModule:
     slideHeron
     slideGolem
     slideTurk
-    slideLeibniz
-    slideBoole
+  slideLeibniz
+  slideBoole
+  skip:
     slideAda
     slideNeuron
     slideVannevar
@@ -294,5 +304,5 @@ when isMainModule:
   slidePerceptrons
   slideMoravec
   slideMistral
-  slideAlexNet
+  #slideAlexNet
   nbSave

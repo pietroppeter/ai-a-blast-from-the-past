@@ -6,12 +6,9 @@ todo content:
 - [x] Hero
 - [x] Golem
 - [x] Turk
-- [ ] Leibniz
-- [ ] Boole
-- [ ] Ada
-- [ ] Neuron
-- [ ] add regex?
-- [ ] Vannevar
+- [x] Ada
+  - [ ] Neuron
+  - [ ] add regex?
 - [ ] Turing
 - [ ] Dartmouth
 - [x] MENACE
@@ -19,9 +16,8 @@ todo content:
 - [ ] Perceptrons
 - [x] Moravec
 - [ ] Mistral
-- [ ] AlexNet
 
 format:
-- [ ] decide what to skip
+- [x] decide what to skip
 - [ ] cleanup how slides are shown
 - [ ] colors?

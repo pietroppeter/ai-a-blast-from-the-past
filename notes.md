@@ -14,7 +14,7 @@ todo content:
 - [ ] Turing
 - [ ] Dartmouth
 - [x] MENACE
-- [ ] ELIZA
+- [x] ELIZA
 - [ ] Perceptrons
 - [ ] Moravec
 - [ ] Mistral

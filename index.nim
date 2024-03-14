@@ -185,7 +185,7 @@ In 1961 Donald Michie designed and built "Matchbox Educable Noughts and Crosses 
 a mechanical computer made of 304 matchboxes that can learn how to play Tic-Tac-Toe.
 
 Roughly 40 years later I read about MENACE in a crossword weekly magazine
-and it is still the best imagine I have in my mind of what
+and it is still the best imagine I have incomey mind of what
 Reinforcement Learning is about.
 
 Look it up, it is worth it!
@@ -194,12 +194,23 @@ Look it up, it is worth it!
 )
 
 slide(
-  whenn = "1965",
-  who = "Weizenbaum",
+  whenn = "1966",
+  who = "Joseph Weizenbaum",
   what = "ELIZA",
-  image = "https://placehold.co/600x400",
+  image = "https://upload.wikimedia.org/wikipedia/commons/7/79/ELIZA_conversation.png",
   notes = """
-todo
+Around 1966 Joseph Weizenbaum develop what we would now called a chatbot
+that was able to simulate a a psychotherapist of the Rogerian school.
+The technology used is mainly pattern matching using regular expressions.
+
+Weizenbaum said at the time: "What I had not realized is that extremely short exposures
+to a relatively simple computer program could induce powerful delusional thinking
+in quite normal people".
+
+Later he would become strongly worried about social impacts of AI
+saying that the computer, at its most base level,
+is a fundamentally conservative force and that despite being a technological innovation,
+it ends up hindering social progress.
 """,
   Eliza
 )

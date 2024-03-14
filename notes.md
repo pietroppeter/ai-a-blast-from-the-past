@@ -2,9 +2,10 @@ overall:
 - [x] draft of content
 
 todo content:
-- [ ] Heron
-- [ ] Golem
-- [ ] Turk
+- [x] Title
+- [x] Heron
+- [x] Golem
+- [x] Turk
 - [ ] Leibniz
 - [ ] Boole
 - [ ] Ada

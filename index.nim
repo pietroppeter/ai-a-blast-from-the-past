@@ -8,6 +8,12 @@ template slide(ident: untyped, body: untyped) =
 slide(Title):
   nbText: "## AI: a blast from the past"
   nbText: "#### An opinionated and condensed history"
+  speakerNote """
+I have 5 minutes and I though I could fit a short history of AI
+since AI really started with ChatGPT less than 16 months ago.
+I actually found out that there is more to it, so here is a very compressed history of AI.
+... and compression fits very well with AI, after all it ChatGPT is just a big zip file, right?
+"""
 
 type
   Data = tuple
@@ -35,22 +41,34 @@ template slide(
 
 slide(
   whenn = "60 AD",
-  who = "Heron of Alexandria",
-  what = "theatre", # todo
-  image = "https://placehold.co/600x400",
+  who = "Hero of Alexandria",
+  what = "An Automatic Theatre", # todo
+  image = "https://upload.wikimedia.org/wikipedia/commons/2/2e/Hero_of_Alexandria.png",
   notes = """
-todo
+In Anno Domini 60 Hero of Alexandria created what might have been
+"the world's first practical programmable machine
+an automatic theatre."
+
+I find fascinating that the first  historical record of AI
+- according to Schmidhuber, and who I am to contradict the guy -
+is about a form of art that stubbornly refuses to die
+- but AI seems to be coming for all artists after all
 """,
+# https://en.wikipedia.org/wiki/Timeline_of_artificial_intelligence
+# https://people.idsia.ch/~juergen/deep-learning-history.html#SHA7a:~:text=Perhaps%20the%20world%27s%20first%20practical%20programmable%20machine%20was%20an%20automatic%20theatre%20made%20in%20the%201st%20century%5BSHA7a%5D%5BRAU1%5D%20by%20Heron%20of%20Alexandria
   Heron
 )
 
 slide(
   whenn = "1580",
-  who = "Rabbi",
+  who = "Rabbi Judah Loew ben Bezalel",
   what = "Golem", # todo
-  image = "https://placehold.co/600x400",
+  image = "https://www.researchgate.net/profile/Amir-Vudka/publication/357910123/figure/fig2/AS:1113612311629827@1642517273373/Der-Golem-Paul-Wegener-1920.png",
   notes = """
-todo
+Around 1580, Rabbi Judah Loew ben Bezalel of Prague creates the Golem.
+Animated by truth, but lacking free will, a golem always does exactly what is told.
+The Golem is incredibly powerful but its obedience also brings danger
+(and I think it is not time yet to retire this foundational myth of AI and science fiction)
 """,
   Golem
 )
@@ -60,9 +78,11 @@ slide(
   whenn = "1770",
   who = "Van Kempelen",
   what = "Mechanical Turk", # todo
-  image = "https://placehold.co/600x400",
+  image = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Racknitz_-_The_Turk_3.jpg/1920px-Racknitz_-_The_Turk_3.jpg",
   notes = """
-todo
+In 1770 Wolfgang Von Kempelen built the Mechanical Turk
+a chess-playing machine that was revealed only 80 years later to be a hoax.
+I guess there is a lesson against closed source AI hidden somewhere inside the Mechanical Turk.
 """,
   Turk
 )
@@ -213,11 +233,15 @@ todo
 )
 
 when isMainModule:
+  template skip(body: untyped) =
+    body
+ 
   nbInit(theme = revealTheme)
   setSlidesTheme(Serif)
-  slideTitle
-  slideHeron
-  slideGolem
+  skip:
+    slideTitle
+    slideHeron
+    slideGolem
   slideTurk
   slideLeibniz
   slideBoole

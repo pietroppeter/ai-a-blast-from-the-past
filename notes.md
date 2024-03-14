@@ -3,7 +3,7 @@ overall:
 
 todo content:
 - [x] Title
-- [x] Heron
+- [x] Hero
 - [x] Golem
 - [x] Turk
 - [ ] Leibniz
@@ -13,7 +13,7 @@ todo content:
 - [ ] Vannevar
 - [ ] Turing
 - [ ] Dartmouth
-- [ ] MENACE
+- [x] MENACE
 - [ ] ELIZA
 - [ ] Perceptrons
 - [ ] Moravec

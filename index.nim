@@ -8,11 +8,20 @@ template slide(ident: untyped, body: untyped) =
 slide(Title):
   nbText: "## AI: a blast from the past"
   nbText: "#### An opinionated and condensed history"
+  nbText: "[py4ai.com](py4ai.com)"
   speakerNote """
+This is a lightning talk for the conference Py4AI
+that is finally happening this Saturday
+and that I have spent quite a bunch of time
+organizing during my past batch.
+Also inspired by Ariel on punchcards from a few weeks ago.
+
+Not finished.
+
 I have 5 minutes and I though I could fit a short history of AI
 since AI really started with ChatGPT less than 16 months ago.
 I actually found out that there is more to it, so here is a very compressed history of AI.
-... and compression fits very well with AI, after all it ChatGPT is just a big zip file, right?
+... and compression fits very well with AI, after all ChatGPT is just a big zip file, right?
 """
 
 type
@@ -170,9 +179,16 @@ slide(
   whenn = "1961",
   who = "Donald Michie",
   what = "MENACE",
-  image = "https://placehold.co/600x400",
+  image = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Mscroggs-MENACE-cropped.jpg/700px-Mscroggs-MENACE-cropped.jpg",
   notes = """
-todo
+In 1961 Donald Michie designed and built "Matchbox Educable Noughts and Crosses Engine"
+a mechanical computer made of 304 matchboxes that can learn how to play Tic-Tac-Toe.
+
+Roughly 40 years later I read about MENACE in a crossword weekly magazine
+and it is still the best imagine I have in my mind of what
+Reinforcement Learning is about.
+
+Look it up, it is worth it!
 """,
   Menace
 )
@@ -234,7 +250,7 @@ todo
 
 when isMainModule:
   template skip(body: untyped) =
-    body
+    discard
  
   nbInit(theme = revealTheme)
   setSlidesTheme(Serif)
@@ -242,14 +258,14 @@ when isMainModule:
     slideTitle
     slideHeron
     slideGolem
-  slideTurk
-  slideLeibniz
-  slideBoole
-  slideAda
-  slideNeuron
-  slideVannevar
-  slideTuring
-  slideDartmouth
+    slideTurk
+    slideLeibniz
+    slideBoole
+    slideAda
+    slideNeuron
+    slideVannevar
+    slideTuring
+    slideDartmouth
   slideMenace
   slideEliza
   slidePerceptrons

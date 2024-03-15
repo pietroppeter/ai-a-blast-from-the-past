@@ -8,16 +8,7 @@ template slide(ident: untyped, body: untyped) =
 slide(Title):
   nbText: "## AI: a blast from the past"
   nbText: "#### selected milestones from AI history"
-  nbText: "[py4ai.com](py4ai.com)"
   speakerNote """
-This is a lightning talk for the conference Py4AI
-that is finally happening this Saturday
-and that I have spent quite a bunch of time
-organizing during my past batch.
-Also inspired by Ariel on punchcards from a few weeks ago.
-
-Not finished.
-
 I have 5 minutes and I though I could fit a short history of AI
 since AI really started with ChatGPT less than 16 months ago.
 I actually found out that there is more to it, so here is a very compressed history of AI.
@@ -55,17 +46,18 @@ slide(
   image = "https://upload.wikimedia.org/wikipedia/commons/2/2e/Hero_of_Alexandria.png",
   notes = """
 In Anno Domini 60 Hero of Alexandria created what might have been
-"the world's first practical programmable machine
+"the world's first practical programmable machine:
 an automatic theatre."
 
-I find fascinating that the first  historical record of AI
-- according to Schmidhuber, and who I am to contradict the guy -
-is about a form of art that stubbornly refuses to die
-- but AI seems to be coming for all artists after all
+I find fascinating that the first  historical record of AI -
+according to Schmidhuber, and who I am to contradict the guy -
+is about a form of art that stubbornly refuses to die.
+
+But AI seems to be coming for all artists after all
 """,
 # https://en.wikipedia.org/wiki/Timeline_of_artificial_intelligence
 # https://people.idsia.ch/~juergen/deep-learning-history.html#SHA7a:~:text=Perhaps%20the%20world%27s%20first%20practical%20programmable%20machine%20was%20an%20automatic%20theatre%20made%20in%20the%201st%20century%5BSHA7a%5D%5BRAU1%5D%20by%20Heron%20of%20Alexandria
-  Heron
+  Hero
 )
 
 slide(
@@ -126,12 +118,9 @@ slide(
   what = "Notes on Analytical Engine",
   image = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Ada_Lovelace_in_1852.jpg/440px-Ada_Lovelace_in_1852.jpg",
   notes = """
-In 1843 Ada Lovelace added an extensive set of notes to a translation of
-Luigi Menabrea's article on Babbage's newest proposed machine called Analytical Engine.
-
-Besides containing the first published program in history
-(for a machine that would never be built) it also contains the following remark,
-known as a 'dismissal'of AI:
+In 1843 Ada Lovelace, in the same set of notes where she
+published the first program of history (for a machine that would never be built),
+makes the following remark:
 "The Analytical Engine has no pretensions whatever to originate anything.
 It can do whatever we know how to order it to perform.
 It can follow analysis; but it has no power of anticipating any analytical relations or truths"
@@ -208,18 +197,13 @@ slide(
   what = "ELIZA",
   image = "https://upload.wikimedia.org/wikipedia/commons/7/79/ELIZA_conversation.png",
   notes = """
-Around 1966 Joseph Weizenbaum develop what we would now called a chatbot
-that was able to simulate a a psychotherapist of the Rogerian school.
+Around 1966 Joseph Weizenbaum created ELIZA,
+a chatbot that was able to simulate a a psychotherapist of the Rogerian school.
 The technology used is mainly pattern matching using regular expressions.
 
 Weizenbaum said at the time: "What I had not realized is that extremely short exposures
 to a relatively simple computer program could induce powerful delusional thinking
 in quite normal people".
-
-Later he would become strongly worried about social impacts of AI
-saying that the computer, at its most base level,
-is a fundamentally conservative force and that despite being a technological innovation,
-it ends up hindering social progress.
 """,
   Eliza
 )
@@ -241,14 +225,10 @@ slide(
   what = "Stanford Cart",
   image = "https://web.stanford.edu/~learnest/sail/oldcart.fld/image006.png",
   notes = """
-In 1979 Hans Moravec during his PhD thesis was able to make the Stanford Cart move
-automously around obstacles in a controlled environment.
-The vehicle crossed a chair-filled room without human intervention in about five hours.
+In 1979 Hans Moravec was able to make the Stanford Cart
+cross a chair-filled room without human intervention in about five hours.
 
-Nowadays the so called Moravec Paradox is still used to explain why we do not
-yet have autonomous driving, despite all the promises that a prominent social media owner can make.
-
-In the words of Moravec the paradox lies in the fact that:
+He later phrased what is now known as Moravec Paradox:
 "it is comparatively easy to make computers exhibit
 adult level performance on intelligence tests or playing checkers,
 and difficult or impossible to give them the skills of a one-year-old
@@ -285,19 +265,20 @@ when isMainModule:
     discard
  
   nbInit(theme = revealTheme)
+  footer("[github.com/pietroppeter/ai-a-blast-from-the-past](https://github.com/pietroppeter/ai-a-blast-from-the-past)")
   setSlidesTheme(Serif)
-  slideTitle
-  slideHeron
-  slideGolem
-  slideTurk
-  slideAda
+  slideTitle # timed at 16 secs
+  slideHero # 25
+  slideGolem # 25
+  slideTurk # 19
+  slideAda # 25
   skip:
     slideNeuron
     slideTuring
     slideDartmouth
-  slideMenace
-  slideEliza
+  slideMenace # 25
+  slideEliza # 42
   # slidePerceptrons
-  slideMoravec
+  slideMoravec # 46
   # slideMistral
-  nbSave
+  nbSave # 16 + 25 + 25 + 19 + 25 + 25 + 26 + 29 = 190 (60*5=300)

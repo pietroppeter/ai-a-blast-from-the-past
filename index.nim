@@ -11,14 +11,16 @@ slide(Title):
   speakerNote """
 I have 5 minutes and I though I could fit a short history of AI
 since AI really started with ChatGPT less than 16 months ago.
+
 I actually found out that there is more to it, so here is a very compressed history of AI.
 ... and compression fits very well with AI, after all ChatGPT is just a big zip file, right?
 """
 
-type
-  Data = tuple
-    whenn, who, what: string
-    image: string
+slide(Recurse):
+  nbText: "### Thank you"
+  nbText: "Inspired by Recurse Center"
+  nbImage("https://upload.wikimedia.org/wikipedia/commons/5/5a/Recurse_Center.png")
+  nbText("[recurse.com](recurse.com)")
 
 template slide(
   whenn = "_when_",
@@ -62,11 +64,11 @@ But AI seems to be coming for all artists after all
 
 slide(
   whenn = "1580",
-  who = "Rabbi Judah Loew ben Bezalel",
+  who = "Rabbi Judah Loew ben Bezalel",
   what = "Golem", # todo
   image = "https://www.researchgate.net/profile/Amir-Vudka/publication/357910123/figure/fig2/AS:1113612311629827@1642517273373/Der-Golem-Paul-Wegener-1920.png",
   notes = """
-Around 1580, Rabbi Judah Loew ben Bezalel of Prague creates the Golem.
+Around 1580, Rabbi Judah Loew ben Bezalel of Prague creates the Golem.
 Animated by truth, but lacking free will, a golem always does exactly what is told.
 The Golem is incredibly powerful but its obedience also brings danger
 (and I think it is not time yet to retire this foundational myth of AI and science fiction)
@@ -83,33 +85,10 @@ slide(
   notes = """
 In 1770 Wolfgang Von Kempelen built the Mechanical Turk
 a chess-playing machine that was revealed only 80 years later to be a hoax.
+
 I guess there is a lesson against closed source AI hidden somewhere inside the Mechanical Turk.
 """,
   Turk
-)
-
-slide(
-  whenn = "1676", # 1679
-  who = "Leibniz",
-  what = "Chain Rule", # todo
-  image = "https://placehold.co/600x400",
-  notes = """
-In 1676 Gottfried Wilhelm Leibniz published the chain rule of differential calculus,
-a critical ingredient in the training of modern neural network.
-""",
-  Leibniz
-)
-
-slide(
-  whenn = "1854",
-  who = "George Boole",
-  what = "Symbolic Language", # todo
-  image = "https://placehold.co/600x400",
-  notes = """
-investigate the fundamental laws of those operations of the mind by which reasoning is performed,
-to give expression to them in the symbolic language of a calculus
-""",
-  Boole
 )
 
 slide(
@@ -132,45 +111,17 @@ slide(
   whenn = "1943",
   who = "McCulloch and Pitts",
   what = "Neuron", # todo
-  image = "https://placehold.co/600x400",
+  image = "https://pbs.twimg.com/media/DR1U7V3WAAAdFUM?format=jpg&name=large",
   notes = """
-todo
+It is rather well known that the first appearance of
+a Neuron model was in article of 1943 by McCulloch and Pitts.
+
+It is less well known that the same article stimulated
+an analysis by mathematician Stephen Kleene
+which introduced a tool used by every developer: Regular Expressions.
 """,
   Neuron
-)
-
-slide(
-  whenn = "1945",
-  who = "Vannevar Bush",
-  what = "As We May Think", # todo
-  image = "https://placehold.co/600x400",
-  notes = """
-todo
-""",
-  Vannevar
-)
-
-slide(
-  whenn = "1950",
-  who = "Alan Turing",
-  what = "Imitation Game",
-  image = "https://placehold.co/600x400",
-  notes = """
-todo
-""",
-  Turing
-)
-
-slide(
-  whenn = "1956",
-  who = "Dartmouth",
-  what = "\"Artificial Intelligence\"",
-  image = "https://placehold.co/600x400",
-  notes = """
-todo - add a definition I like of AI:
-stuff that I do not yet understand
-""",
-  Dartmouth
+# https://whyisthisinteresting.substack.com/p/the-regular-expression-edition
 )
 
 slide(
@@ -212,11 +163,18 @@ slide(
   whenn = "1969",
   who = "Minsky & Papert",
   what = "Perceptrons",
-  image = "https://placehold.co/600x400",
+  image = "https://m.media-amazon.com/images/I/51-Rg3IuYrL._SY522_.jpg",
   notes = """
-todo
+In 1969 Marvin Minsky and Seymour Papert
+published the book Perceptrons.
+
+The book contains a number of mathematical proofs
+that emphasized limitations of a neural nets based
+approach to AI and was influential in
+concentrating research efforts towards the symbolic approach.
 """,
   Perceptrons
+# https://www.jstor.org/stable/285702?read-now=1&seq=40#page_scan_tab_contents
 )
 
 slide(
@@ -226,7 +184,7 @@ slide(
   image = "https://web.stanford.edu/~learnest/sail/oldcart.fld/image006.png",
   notes = """
 In 1979 Hans Moravec was able to make the Stanford Cart
-cross a chair-filled room without human intervention in about five hours.
+cross a room filled with chairs without human intervention in about five hours.
 
 He later phrased what is now known as Moravec Paradox:
 "it is comparatively easy to make computers exhibit
@@ -240,24 +198,20 @@ when it comes to perception and mobility"
 
 slide(
   whenn = "1996",
-  who = "X et al",
+  who = "ISMES/CESI",
   what = "Mistral",
-  image = "https://placehold.co/600x400",
+  image = "https://www.cesi.it/app/uploads/2022/06/22.06.22-itapiu-dam.jpg",
   notes = """
-todo
+In 1996 ISMES, later acquired by CESI, develops Mistral,
+an Expert System that is still used in Dams all over the world
+to monitor their safety.
+
+Expert systems were the first truly succesful AI technology that
+starting in the 70s generated excitement and big investments.
+Until they didn't anymore.
 """,
   Mistral
-)
-
-slide(
-  whenn = "2012",
-  who = "X Ilya Hinton",
-  what = "AlexNet",
-  image = "https://placehold.co/600x400",
-  notes = """
-todo
-""",
-  AlexNet
+# https://www.cesi.it/about-us/overview/ismes/
 )
 
 when isMainModule:
@@ -272,13 +226,13 @@ when isMainModule:
   slideGolem # 25
   slideTurk # 19
   slideAda # 25
-  skip:
-    slideNeuron
-    slideTuring
-    slideDartmouth
+  slideNeuron # 20
   slideMenace # 25
-  slideEliza # 42
-  # slidePerceptrons
-  slideMoravec # 46
-  # slideMistral
-  nbSave # 16 + 25 + 25 + 19 + 25 + 25 + 26 + 29 = 190 (60*5=300)
+  slideEliza # 26
+  slidePerceptrons # 16
+  slideMoravec # 29
+  slideMistral # 20
+  slideRecurse
+  nbSave
+  # 16 + 25 + 25 + 19 + 25 + 20 + 25 + 26 + 16 + 29 + 20 = 246 (60*5=300)
+  # a full run was timed at 4:45

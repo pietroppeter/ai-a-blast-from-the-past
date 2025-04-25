@@ -10,7 +10,7 @@ slide(Title):
   nbText: "#### selected milestones from AI history"
   speakerNote """
 I have 5 minutes and I though I could fit a short history of AI
-since AI really started with ChatGPT less than 16 months ago.
+since AI really started with ChatGPT a bit more than 2 years ago and not much has happened since then.
 
 I actually found out that there is more to it, so here is a very compressed history of AI.
 ... and compression fits very well with AI, after all ChatGPT is just a big zip file, right?
@@ -181,7 +181,7 @@ slide(
   whenn = "1979",
   who = "Hans Moravec",
   what = "Stanford Cart",
-  image = "https://web.stanford.edu/~learnest/sail/oldcart.fld/image006.png",
+  image = "https://www.researchgate.net/publication/329652380/figure/fig3/AS:11431281185634476@1693737945406/Stanford-Cart-developed-at-Stanford-University-in-the-beginning-60s-SOURCE-Archive-of.ppm",
   notes = """
 In 1979 Hans Moravec was able to make the Stanford Cart
 cross a room filled with chairs without human intervention in about five hours.
